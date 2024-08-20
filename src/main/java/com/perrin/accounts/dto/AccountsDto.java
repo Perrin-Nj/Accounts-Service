@@ -3,6 +3,7 @@ package com.perrin.accounts.dto;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,8 +20,7 @@ import lombok.Setter;
 )
 public class AccountsDto {
 
-    @NotEmpty(message = "AccountNumber should not be empty")
-    @Pattern(regexp = "(^$|[0-9]{10})", message = "AccountNumber, should have 10 digits")
+    @NotNull
     @Schema(
             description = "Schema to hold Account information",
             example = "908123873"
