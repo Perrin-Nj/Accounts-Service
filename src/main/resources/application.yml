@@ -3,7 +3,6 @@ server:
 spring:
   application:
     name: accounts
-    version: 0.0.1
   datasource:
     url: jdbc:h2:mem:test_db
     driver-class-name: org.h2.Driver

@@ -1,5 +1,5 @@
 # start with a base image containing java runtime
-FROM amazoncorretto:21-alpine-jdk AS base
+FROM amazoncorretto:21-alpine-jdk as base
 
 # Image maintainer
 LABEL version="0.1"
